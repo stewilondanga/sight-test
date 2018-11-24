@@ -119,13 +119,13 @@ button:hover {
   user-select: none;
 }
 
-/*.word-count {
+.word-count {
   position: absolute;
   bottom: 20px;
   right: 30px;
 }
 
-.menu {
+/*.menu {
   position: absolute;
   top: 30px;
   display: block;
