@@ -7,8 +7,8 @@ var navigate = (function() {
   });
 })();
 
-/*let SightWordLists = {};
-let currentList = {};
+let SightWordLists = {};
+/*let currentList = {};
 let tempList = [];
 let lastOnly = false;
 
