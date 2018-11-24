@@ -174,12 +174,13 @@ body.open {
   transform: translateX(140px);
 }
 
-/*body.open .menu span:nth-child(1) {
+body.open .menu span:nth-child(1) {
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
   top: 14px;
 }
-body.open .menu span:nth-child(2) {
+
+/*body.open .menu span:nth-child(2) {
   background-color: transparent;
 }
 body.open .menu span:nth-child(3) {
