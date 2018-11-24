@@ -125,7 +125,7 @@ button:hover {
   right: 30px;
 }
 
-/*.menu {
+.menu {
   position: absolute;
   top: 30px;
   display: block;
@@ -136,7 +136,8 @@ button:hover {
   background: none;
   border: 0;
 }
-.menu span {
+
+/*.menu span {
   display: block;
   height: 6px;
   width: 100%;
