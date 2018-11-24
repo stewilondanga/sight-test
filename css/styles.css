@@ -157,10 +157,11 @@ button:hover {
   top: 14px;
 }
 
-/*.menu span:nth-child(3) {
+.menu span:nth-child(3) {
   top: 28px;
 }
-.menu:hover {
+
+/*.menu:hover {
   background: none;
 }
 .menu:hover span {
