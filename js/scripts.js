@@ -8,8 +8,8 @@ var navigate = (function() {
 })();
 
 let SightWordLists = {};
-/*let currentList = {};
-let tempList = [];
+let currentList = {};
+/*let tempList = [];
 let lastOnly = false;
 
 SightWordLists.A = ['the', 'I', 'to', 'a', 'is', 'my', 'go', 'me', 'like', 'on', 'in', 'so', 'we', 'it', 'and', 'up', 'at', 'see', 'he', 'do', 'you', 'and', 'can', 'no', 'am'];
