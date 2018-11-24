@@ -169,11 +169,12 @@ button:hover {
   background: white;
 }
 
-/*body.open {
+body.open {
   -webkit-transform: translateX(140px);
-          transform: translateX(140px);
+  transform: translateX(140px);
 }
-body.open .menu span:nth-child(1) {
+
+/*body.open .menu span:nth-child(1) {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   top: 14px;
