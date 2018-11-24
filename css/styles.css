@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -8,8 +8,9 @@ body {
 
 .my_social {
   position: absolute;
-  top: 25px;
+  top: 525px;
   left: 25px;
+  z-index: 10;
 }
 
 .my_social a {
@@ -19,6 +20,185 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+  margin: 0;
+  background: #2f2f39;
+  font: 14px/1.35 "IBM Plex Mono", monospace;
+  color: white;
+  height: 100%;
+}
+
+.button-group {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 140px;
+  height: 100vh;
+  overflow: scroll;
+}
+.button-group button {
+  width: 100%;
+}
+
+button {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 17px;
+  margin: 20px 0;
+  padding: 0 20px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 144ms ease-in-out;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+}
+
+.new-word-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+}
+.new-word-container h1 {
+  margin: 0;
+  font-weight: normal;
+}
+.new-word-container h2 {
+  font-weight: normal;
+}
+.new-word-container h2 span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.new-word-container button:not(.menu) {
+  margin-top: 0;
+  align-self: flex-end;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  width: 120px;
+}
+.new-word-container p {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 12.5vw;
+  color: turquoise;
+  font-weight: bold;
+}
+.new-word-container p span {
+  display: inline-block;
+  padding: 60px 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.word-count {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 34px;
+  background: none;
+  border: 0;
+}
+.menu span {
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 100px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transition: all .3s;
+}
+.menu span:nth-child(1) {
+  top: 0;
+}
+.menu span:nth-child(2) {
+  top: 14px;
+}
+.menu span:nth-child(3) {
+  top: 28px;
+}
+.menu:hover {
+  background: none;
+}
+.menu:hover span {
+  background: white;
+}
+
+body.open {
+  -webkit-transform: translateX(140px);
+          transform: translateX(140px);
+}
+body.open .menu span:nth-child(1) {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 14px;
+}
+body.open .menu span:nth-child(2) {
+  background-color: transparent;
+}
+body.open .menu span:nth-child(3) {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 14px;
+}
+
+@media screen and (min-width: 35rem) {
+  body {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+
+  .button-group {
+    float: left;
+    position: relative;
+    left: 0;
+  }
+
+  .new-word-container .menu {
+    display: none;
+  }
+  .new-word-container p {
+    font-size: 5em;
+  }
 }
 
 .containers {
