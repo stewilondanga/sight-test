@@ -109,17 +109,17 @@ button:hover {
   font-weight: bold;
 }
 
-/*.new-word-container p span {
+.new-word-container p span {
   display: inline-block;
   padding: 60px 40px;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.word-count {
+/*.word-count {
   position: absolute;
   bottom: 20px;
   right: 30px;
