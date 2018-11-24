@@ -137,7 +137,7 @@ button:hover {
   border: 0;
 }
 
-/*.menu span {
+.menu span {
   display: block;
   height: 6px;
   width: 100%;
@@ -145,10 +145,11 @@ button:hover {
   position: absolute;
   border-radius: 100px;
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
   transition: all .3s;
 }
-.menu span:nth-child(1) {
+
+/*.menu span:nth-child(1) {
   top: 0;
 }
 .menu span:nth-child(2) {
