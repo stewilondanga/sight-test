@@ -190,18 +190,16 @@ body.open .menu span:nth-child(3) {
   top: 14px;
 }
 
-/*@media screen and (min-width: 35rem) {
+@media screen and (min-width: 35rem) {
   body {
     -webkit-transform: none !important;
-            transform: none !important;
+    transform: none !important;
   }
-
   .button-group {
     float: left;
     position: relative;
     left: 0;
   }
-
   .new-word-container .menu {
     display: none;
   }
@@ -210,7 +208,7 @@ body.open .menu span:nth-child(3) {
   }
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
