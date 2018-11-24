@@ -31,13 +31,11 @@ body {
   height: 2.5em;
 }
 
-/*.my_social a img {
+.my_social a img {
   height: 1.5em;
 }
 
-
-
-.button-group {
+/*.button-group {
   position: absolute;
   top: 0;
   left: -140px;
