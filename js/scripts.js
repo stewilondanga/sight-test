@@ -10,9 +10,9 @@ var navigate = (function() {
 let SightWordLists = {};
 let currentList = {};
 let tempList = [];
-/*let lastOnly = false;
+let lastOnly = false;
 
-SightWordLists.A = ['the', 'I', 'to', 'a', 'is', 'my', 'go', 'me', 'like', 'on', 'in', 'so', 'we', 'it', 'and', 'up', 'at', 'see', 'he', 'do', 'you', 'and', 'can', 'no', 'am'];
+/*SightWordLists.A = ['the', 'I', 'to', 'a', 'is', 'my', 'go', 'me', 'like', 'on', 'in', 'so', 'we', 'it', 'and', 'up', 'at', 'see', 'he', 'do', 'you', 'and', 'can', 'no', 'am'];
 SightWordLists.B = ['went', 'are', 'this', 'look', 'for', 'get', 'come', 'got', 'play', 'was', 'had', 'they', 'will', 'too', 'all', 'be', 'as', 'ball', 'by', 'day', 'did', 'has', 'her', 'him', 'fun'];
 SightWordLists.C = ['eat', 'if', 'jump', 'man', 'or', 'not', 'mom', 'out', 'now', 'of', 'put', 'ran', 'sat', 'read', 'run', 'she', 'sit', 'then', 'his', 'say', 'us', 'yes', 'saw', 'girl', 'how'];
 SightWordLists.D = ["when", "your", "about", "from", "than", "away", "them", "came", "big", "been", "after", "who", "back", "I'm", "because", "very", "could", "have", "make", "any", "into", "there", "were", "mother", "just"];
