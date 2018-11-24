@@ -21,17 +21,15 @@ SightWordLists.F = ['things', 'school', 'walk', 'always', 'great', 'find', 'unti
 SightWordLists.G = ['again', 'each', 'begin', 'goes', 'together', 'does', 'friend', 'enough', 'should', "you're", 'through', 'ready', 'might', 'suddenly', 'special', 'beautiful', "couldn't", 'either', 'thought', "they're", 'while', 'themselves', 'without', 'probably', 'yourself'];
 SightWordLists.H = ['near', 'everything', "wouldn't", 'need', 'kind', 'different', 'myself', 'everyone', 'few', 'being', 'really', 'understand', 'question', 'against', 'old', 'happen', 'several', 'someone', 'slowly', 'follow', 'better', 'since', 'answer', 'plan', 'wanted'];
 
-/*
-
 // Append List Buttons to document
-for(var key in SightWordLists) {
-  if(!currentList.name) {
+for (var key in SightWordLists) {
+  if (!currentList.name) {
     currentList.name = key;
     currentList.list = SightWordLists[key];
   }
-  document.getElementById('buttonGroup').innerHTML += '<button class="list-btn" id="'+ key +'">List '+ key +'</button>';
+  document.getElementById('buttonGroup').innerHTML += '<button class="list-btn" id="' + key + '">List ' + key + '</button>';
 }
-
+/*
 var setCurrentList = function(list, listType) {
   if (document.getElementById('only-list').checked) {
     document.getElementById('currentList').innerHTML = "Only " + list.name;
