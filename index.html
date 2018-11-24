@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title> </title>
+</head>
+
+<body>
+
+  <div class="my_social">
+      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+        </a>
+      <a href="https://stewilondanga.github.io/" class="social">
+          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+        </a>
+      <a href="https://twitter.com/stew_ilondanga" class="social">
+          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+        </a>
+    </div>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <div class="button-group" id="buttonGroup">
+      <label><input type="checkbox" checked id="only-list" >Only</label>
+    </div>
+    <div class="new-word-container">
+      <button class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button id="getNewWord">New Word</button>
+      <h1>Sight Word Practice</h1>
+      <h2>Current List: <span id="currentList"></span></h2>
+      <p class="new-word"><span id="newWord"></span></p>
+    </div>
+    <div class="word-count">
+      <span id="words-left"></span> of <span id="total-words"></span>
+    </div>
+
+
+  <section id="contact">
+    <div class="overlay">
+      <div class="containers">
+
+        <h1>
+<script>
+with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
+h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
+while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
+</script>
+</h1>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/scripts.js" charset="utf-8"></script>
+
+</html>
