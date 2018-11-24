@@ -19,8 +19,6 @@ body {
   height: 100%;
 }
 
-/*
-
 .my_social {
   position: absolute;
   top: 525px;
@@ -28,7 +26,7 @@ body {
   z-index: 10;
 }
 
-.my_social a {
+/*.my_social a {
   display: inline-block;
   height: 2.5em;
 }
