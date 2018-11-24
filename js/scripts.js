@@ -75,44 +75,44 @@ var listBtnClickHandler = function(e) {
   document.body.classList.remove('open');
 }
 
-/*    var getNewWord = function() {
-      if (!tempList.length) {
-        tempList = currentList.list.slice(0);
-      }
-
-      console.log(lastOnly);
-      if (lastOnly) {
-        //Math.floor(Math.random() * (max - min + 1)) + min
-        var i = Math.floor(Math.random() * (tempList.length - (tempList.length - 25))) + (tempList.length - 25);
-      } else {
-        var i = Math.floor(Math.random() * tempList.length);
-      }
-
-      console.log(i);
-
-      document.getElementById('newWord').innerHTML = tempList[i];
-      document.getElementById('words-left').innerHTML = tempList.length;
-
-      tempList.splice(i, 1);
+var getNewWord = function() {
+    if (!tempList.length) {
+      tempList = currentList.list.slice(0);
     }
 
-    window.onload = function() {
-      var listBtns = document.querySelectorAll('.list-btn');
+    /*    console.log(lastOnly);
+        if (lastOnly) {
+          //Math.floor(Math.random() * (max - min + 1)) + min
+          var i = Math.floor(Math.random() * (tempList.length - (tempList.length - 25))) + (tempList.length - 25);
+        } else {
+          var i = Math.floor(Math.random() * tempList.length);
+        }
 
-      // attach click event listener to list selector buttons
-      for (var i = 0; i < listBtns.length; i++) {
-        listBtns[i].onclick = listBtnClickHandler;
+        console.log(i);
+
+        document.getElementById('newWord').innerHTML = tempList[i];
+        document.getElementById('words-left').innerHTML = tempList.length;
+
+        tempList.splice(i, 1);
       }
 
-      // attach click event listener to get new word button
-      document.getElementById('getNewWord').onclick = getNewWord;
-      document.getElementById('newWord').onclick = getNewWord;
+      window.onload = function() {
+        var listBtns = document.querySelectorAll('.list-btn');
 
-      document.querySelector('.menu').addEventListener('click', function(e){
-        document.body.classList.toggle('open');
-      });
+        // attach click event listener to list selector buttons
+        for (var i = 0; i < listBtns.length; i++) {
+          listBtns[i].onclick = listBtnClickHandler;
+        }
 
-      // set initial list values
-      setCurrentList(currentList);
-      getNewWord(false);
-    }
+        // attach click event listener to get new word button
+        document.getElementById('getNewWord').onclick = getNewWord;
+        document.getElementById('newWord').onclick = getNewWord;
+
+        document.querySelector('.menu').addEventListener('click', function(e){
+          document.body.classList.toggle('open');
+        });
+
+        // set initial list values
+        setCurrentList(currentList);
+        getNewWord(false);
+      }
