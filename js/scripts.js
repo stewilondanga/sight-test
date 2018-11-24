@@ -29,7 +29,7 @@ for (var key in SightWordLists) {
   }
   document.getElementById('buttonGroup').innerHTML += '<button class="list-btn" id="' + key + '">List ' + key + '</button>';
 }
-/*
+
 var setCurrentList = function(list, listType) {
   if (document.getElementById('only-list').checked) {
     document.getElementById('currentList').innerHTML = "Only " + list.name;
@@ -39,7 +39,7 @@ var setCurrentList = function(list, listType) {
   document.getElementById('newWord').innerHTML = '';
   document.getElementById('total-words').innerHTML = currentList.list.length;
 }
-
+/*
 var listBtnClickHandler = function(e) {
   var id = this.id;
 
