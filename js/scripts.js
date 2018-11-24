@@ -9,8 +9,8 @@ var navigate = (function() {
 
 let SightWordLists = {};
 let currentList = {};
-/*let tempList = [];
-let lastOnly = false;
+let tempList = [];
+/*let lastOnly = false;
 
 SightWordLists.A = ['the', 'I', 'to', 'a', 'is', 'my', 'go', 'me', 'like', 'on', 'in', 'so', 'we', 'it', 'and', 'up', 'at', 'see', 'he', 'do', 'you', 'and', 'can', 'no', 'am'];
 SightWordLists.B = ['went', 'are', 'this', 'look', 'for', 'get', 'come', 'got', 'play', 'was', 'had', 'they', 'will', 'too', 'all', 'be', 'as', 'ball', 'by', 'day', 'did', 'has', 'her', 'him', 'fun'];
