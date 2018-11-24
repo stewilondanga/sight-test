@@ -39,80 +39,80 @@ var setCurrentList = function(list, listType) {
   document.getElementById('newWord').innerHTML = '';
   document.getElementById('total-words').innerHTML = currentList.list.length;
 }
-/*
+
 var listBtnClickHandler = function(e) {
-  var id = this.id;
+    var id = this.id;
 
-  tempList = [];
+    tempList = [];
 
-  if (document.getElementById('only-list').checked) {
-    for(var key in SightWordLists) {
-      if(id == key) {
-        currentList.name = key;
-        currentList.list = SightWordLists[key];
-        setCurrentList(currentList, "only");
+    if (document.getElementById('only-list').checked) {
+      for (var key in SightWordLists) {
+        if (id == key) {
+          currentList.name = key;
+          currentList.list = SightWordLists[key];
+          setCurrentList(currentList, "only");
+        }
+      }
+    } else {
+      currentList.list = [];
+
+      for (var key in SightWordLists) {
+
+        currentList.list.push.apply(currentList.list, SightWordLists[key]);
+
+        if (id == key) {
+          currentList.name = key;
+          setCurrentList(currentList, "up to");
+          break;
+        }
       }
     }
-  } else {
-    currentList.list = [];
 
-    for (var key in SightWordLists) {
+    /*  lastOnly = true;
+      getNewWord();
+      lastOnly = false;
 
-      currentList.list.push.apply(currentList.list, SightWordLists[key]);
-
-      if (id == key) {
-        currentList.name = key;
-        setCurrentList(currentList, "up to");
-        break;
-      }
+      document.body.classList.remove('open');
     }
-  }
 
-  lastOnly = true;
-  getNewWord();
-  lastOnly = false;
+    var getNewWord = function() {
+      if (!tempList.length) {
+        tempList = currentList.list.slice(0);
+      }
 
-  document.body.classList.remove('open');
-}
+      console.log(lastOnly);
+      if (lastOnly) {
+        //Math.floor(Math.random() * (max - min + 1)) + min
+        var i = Math.floor(Math.random() * (tempList.length - (tempList.length - 25))) + (tempList.length - 25);
+      } else {
+        var i = Math.floor(Math.random() * tempList.length);
+      }
 
-var getNewWord = function() {
-  if (!tempList.length) {
-    tempList = currentList.list.slice(0);
-  }
+      console.log(i);
 
-  console.log(lastOnly);
-  if (lastOnly) {
-    //Math.floor(Math.random() * (max - min + 1)) + min
-    var i = Math.floor(Math.random() * (tempList.length - (tempList.length - 25))) + (tempList.length - 25);
-  } else {
-    var i = Math.floor(Math.random() * tempList.length);
-  }
+      document.getElementById('newWord').innerHTML = tempList[i];
+      document.getElementById('words-left').innerHTML = tempList.length;
 
-  console.log(i);
+      tempList.splice(i, 1);
+    }
 
-  document.getElementById('newWord').innerHTML = tempList[i];
-  document.getElementById('words-left').innerHTML = tempList.length;
+    window.onload = function() {
+      var listBtns = document.querySelectorAll('.list-btn');
 
-  tempList.splice(i, 1);
-}
+      // attach click event listener to list selector buttons
+      for (var i = 0; i < listBtns.length; i++) {
+        listBtns[i].onclick = listBtnClickHandler;
+      }
 
-window.onload = function() {
-  var listBtns = document.querySelectorAll('.list-btn');
+      // attach click event listener to get new word button
+      document.getElementById('getNewWord').onclick = getNewWord;
+      document.getElementById('newWord').onclick = getNewWord;
 
-  // attach click event listener to list selector buttons
-  for (var i = 0; i < listBtns.length; i++) {
-    listBtns[i].onclick = listBtnClickHandler;
-  }
+      document.querySelector('.menu').addEventListener('click', function(e){
+        document.body.classList.toggle('open');
+      });
 
-  // attach click event listener to get new word button
-  document.getElementById('getNewWord').onclick = getNewWord;
-  document.getElementById('newWord').onclick = getNewWord;
-
-  document.querySelector('.menu').addEventListener('click', function(e){
-    document.body.classList.toggle('open');
-  });
-
-  // set initial list values
-  setCurrentList(currentList);
-  getNewWord(false);
-}
+      // set initial list values
+      setCurrentList(currentList);
+      getNewWord(false);
+    }
