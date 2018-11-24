@@ -161,10 +161,11 @@ button:hover {
   top: 28px;
 }
 
-/*.menu:hover {
+.menu:hover {
   background: none;
 }
-.menu:hover span {
+
+/*.menu:hover span {
   background: white;
 }
 
