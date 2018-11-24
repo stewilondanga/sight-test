@@ -35,7 +35,7 @@ body {
   height: 1.5em;
 }
 
-/*.button-group {
+.button-group {
   position: absolute;
   top: 0;
   left: -140px;
@@ -45,7 +45,8 @@ body {
   height: 100vh;
   overflow: scroll;
 }
-.button-group button {
+
+/*.button-group button {
   width: 100%;
 }
 
