@@ -99,7 +99,7 @@ button:hover {
   width: 120px;
 }
 
-/*.new-word-container p {
+.new-word-container p {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -108,7 +108,8 @@ button:hover {
   color: turquoise;
   font-weight: bold;
 }
-.new-word-container p span {
+
+/*.new-word-container p span {
   display: inline-block;
   padding: 60px 40px;
   cursor: pointer;
