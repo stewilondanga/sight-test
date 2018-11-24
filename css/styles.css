@@ -86,11 +86,12 @@ button:hover {
   font-weight: normal;
 }
 
-/*.new-word-container h2 span {
+.new-word-container h2 span {
   font-weight: bold;
   font-size: 1.5em;
 }
-.new-word-container button:not(.menu) {
+
+/*.new-word-container button:not(.menu) {
   margin-top: 0;
   align-self: flex-end;
   background: rgba(255, 255, 255, 0.8);
