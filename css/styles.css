@@ -77,11 +77,12 @@ button:hover {
   height: 100%;
 }
 
-/*.new-word-container h1 {
+.new-word-container h1 {
   margin: 0;
   font-weight: normal;
 }
-.new-word-container h2 {
+
+/*.new-word-container h2 {
   font-weight: normal;
 }
 .new-word-container h2 span {
