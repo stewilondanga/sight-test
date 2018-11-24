@@ -97,22 +97,22 @@ var getNewWord = function() {
 }
 
 window.onload = function() {
-    var listBtns = document.querySelectorAll('.list-btn');
+  var listBtns = document.querySelectorAll('.list-btn');
 
-    // attach click event listener to list selector buttons
-    for (var i = 0; i < listBtns.length; i++) {
-      listBtns[i].onclick = listBtnClickHandler;
-    }
+  // attach click event listener to list selector buttons
+  for (var i = 0; i < listBtns.length; i++) {
+    listBtns[i].onclick = listBtnClickHandler;
+  }
 
-    // attach click event listener to get new word button
-    document.getElementById('getNewWord').onclick = getNewWord;
-    document.getElementById('newWord').onclick = getNewWord;
+  // attach click event listener to get new word button
+  document.getElementById('getNewWord').onclick = getNewWord;
+  document.getElementById('newWord').onclick = getNewWord;
 
-    document.querySelector('.menu').addEventListener('click', function(e) {
-      document.body.classList.toggle('open');
-    });
-    /*
-                // set initial list values
-                setCurrentList(currentList);
-                getNewWord(false);
-              }
+  document.querySelector('.menu').addEventListener('click', function(e) {
+    document.body.classList.toggle('open');
+  });
+
+  // set initial list values
+  setCurrentList(currentList);
+  getNewWord(false);
+}
