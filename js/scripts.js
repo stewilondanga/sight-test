@@ -41,41 +41,41 @@ var setCurrentList = function(list, listType) {
 }
 
 var listBtnClickHandler = function(e) {
-    var id = this.id;
+  var id = this.id;
 
-    tempList = [];
+  tempList = [];
 
-    if (document.getElementById('only-list').checked) {
-      for (var key in SightWordLists) {
-        if (id == key) {
-          currentList.name = key;
-          currentList.list = SightWordLists[key];
-          setCurrentList(currentList, "only");
-        }
-      }
-    } else {
-      currentList.list = [];
-
-      for (var key in SightWordLists) {
-
-        currentList.list.push.apply(currentList.list, SightWordLists[key]);
-
-        if (id == key) {
-          currentList.name = key;
-          setCurrentList(currentList, "up to");
-          break;
-        }
+  if (document.getElementById('only-list').checked) {
+    for (var key in SightWordLists) {
+      if (id == key) {
+        currentList.name = key;
+        currentList.list = SightWordLists[key];
+        setCurrentList(currentList, "only");
       }
     }
+  } else {
+    currentList.list = [];
 
-    /*  lastOnly = true;
-      getNewWord();
-      lastOnly = false;
+    for (var key in SightWordLists) {
 
-      document.body.classList.remove('open');
+      currentList.list.push.apply(currentList.list, SightWordLists[key]);
+
+      if (id == key) {
+        currentList.name = key;
+        setCurrentList(currentList, "up to");
+        break;
+      }
     }
+  }
 
-    var getNewWord = function() {
+  lastOnly = true;
+  getNewWord();
+  lastOnly = false;
+
+  document.body.classList.remove('open');
+}
+
+/*    var getNewWord = function() {
       if (!tempList.length) {
         tempList = currentList.list.slice(0);
       }
