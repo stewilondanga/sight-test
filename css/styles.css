@@ -184,13 +184,13 @@ body.open .menu span:nth-child(2) {
   background-color: transparent;
 }
 
-/*body.open .menu span:nth-child(3) {
+body.open .menu span:nth-child(3) {
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   top: 14px;
 }
 
-@media screen and (min-width: 35rem) {
+/*@media screen and (min-width: 35rem) {
   body {
     -webkit-transform: none !important;
             transform: none !important;
