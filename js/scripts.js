@@ -18,8 +18,8 @@ SightWordLists.C = ['eat', 'if', 'jump', 'man', 'or', 'not', 'mom', 'out', 'now'
 SightWordLists.D = ["when", "your", "about", "from", "than", "away", "them", "came", "big", "been", "after", "who", "back", "I'm", "because", "very", "could", "have", "make", "any", "into", "there", "were", "mother", "just"];
 SightWordLists.E = ['little', 'two', 'going', 'here', 'but', 'that', 'said', 'ever', "don't", 'our', 'what', 'with', 'three', 'their', 'where', 'want', 'today', 'home', 'down', 'under', 'much', 'love', 'know', 'take', 'let'];
 SightWordLists.F = ['things', 'school', 'walk', 'always', 'great', 'find', 'until', 'last', 'high', 'easy', 'next', 'pretty', 'more', 'idea', 'soon', 'often', 'such', 'best', 'think', 'family', 'never', 'house', 'wait', 'same', 'ask'];
-/*SightWordLists.G = ['again', 'each', 'begin', 'goes', 'together', 'does', 'friend', 'enough', 'should', "you're", 'through', 'ready', 'might', 'suddenly', 'special', 'beautiful', "couldn't", 'either', 'thought', "they're", 'while', 'themselves', 'without', 'probably', 'yourself'];
-SightWordLists.H = ['near', 'everything', "wouldn't", 'need', 'kind', 'different', 'myself', 'everyone', 'few', 'being', 'really', 'understand', 'question', 'against', 'old', 'happen', 'several', 'someone', 'slowly', 'follow', 'better', 'since', 'answer', 'plan', 'wanted'];
+SightWordLists.G = ['again', 'each', 'begin', 'goes', 'together', 'does', 'friend', 'enough', 'should', "you're", 'through', 'ready', 'might', 'suddenly', 'special', 'beautiful', "couldn't", 'either', 'thought', "they're", 'while', 'themselves', 'without', 'probably', 'yourself'];
+/*SightWordLists.H = ['near', 'everything', "wouldn't", 'need', 'kind', 'different', 'myself', 'everyone', 'few', 'being', 'really', 'understand', 'question', 'against', 'old', 'happen', 'several', 'someone', 'slowly', 'follow', 'better', 'since', 'answer', 'plan', 'wanted'];
 
 
 
