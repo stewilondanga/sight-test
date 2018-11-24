@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -28,9 +32,6 @@
 }
 
 
-html {
-  height: 100%;
-}
 
 body {
   position: relative;
